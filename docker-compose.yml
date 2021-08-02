@@ -2,10 +2,10 @@ services:
   web:
     image: 'gitlab/gitlab-ce:latest'
     restart: always
-    hostname: 'gitlab.nimbusserver.aos.com'
+    hostname: 'nimbusserver.aos.com'
     environment:
       GITLAB_OMNIBUS_CONFIG: |
-        external_url 'http://gitlab.nimbusserver.aos.com:8929'
+        external_url 'http://nimbusserver.aos.com:8929'
         gitlab_rails['gitlab_shell_ssh_port'] = 8930
     ports:
       - '8929:8929'
