@@ -9,6 +9,8 @@ Configured for demo-net.
 ## Set root password
 
 ```
+docker exec -it gitlab /bin/bash
+
 gitlab-rails console -e production
 
 user = User.where(id: 1).first
@@ -23,6 +25,7 @@ user.save!
 
 ```
 docker exec -it gitlab-runner /bin/bash/
+
 gitlab-runner -register
 ```
 
