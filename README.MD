@@ -19,6 +19,9 @@ user.password = 'pass'
 user.password_confirmation = 'pass'
 
 user.save!
+
+restart cmd (should not be needed):
+gitlab-ctl restart
 ```
 
 ## Register runner
