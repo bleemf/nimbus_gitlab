@@ -35,6 +35,10 @@ gitlab-runner -register
 ## Modify config.toml in runner container after reg
 
 ```
+docker exec -it gitlab-runner /bin/bash/
+
+/etc/gitlab-runner/config.toml
+
 in [runners.docker] add:
 
 network_mode = "demo-net"
