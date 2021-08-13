@@ -1,5 +1,12 @@
 # GitLab + Docker + NimbusServer
 
+## Create docker volume for external config
+```
+docker volume create --name=gitlab-runner-config
+```
+
+## Start containers
+
 ```
 docker-compose up -d
 ```
